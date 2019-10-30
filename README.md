@@ -1,10 +1,4 @@
-# App Service
-
-
-Servicio de cotización 
-
-
-
+# Prueba Tecnica Jr - PHP
 
 Realizado con lumen 6.x para más detalles ir a la documentación oficial.
 https://lumen.laravel.com/docs/6.x
@@ -13,12 +7,19 @@ https://lumen.laravel.com/docs/6.x
 
 
 ## Indice
--   [Requisitos](#requisitos)
+-   [Ejercicio](#ejercicio)
+-   [Requisitos de instalación](#requisitos-de-instalación)
 -   [Instalación](#instalación)
 -   [Scripts](#scripts)
 
+## Ejercicio
+Dada una matriz rectangular de enteros, su tarea es devolver la suma total de todos los valores que no esten debajo de un 0.
 
-## Requisitos
+Ejemplos:
+
+![picture](/doc/example.png)
+
+## Requisitos de instalación
 -   Docker
 
 
@@ -50,8 +51,7 @@ docker exec -it lumen-exercise-1 composer install
 docker exec -it lumen-exercise-1 composer lint-fix
 ```
 
-
-- Probar formateo de código sin formatearlo (útil para CLI):
+- Ejecutar tests:
 ```
-docker exec -it lumen-exercise-1 composer lint
+docker exec -it lumen-exercise-1 vendor/bin/phpunit
 ```

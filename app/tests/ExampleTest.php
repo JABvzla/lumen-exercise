@@ -10,7 +10,7 @@ class ExampleTest extends TestCase
         $this->get('/');
 
         $this->assertEquals(
-            "Hello from controller!",
+            'Hello from controller!',
             $this->response->getContent()
         );
     }
